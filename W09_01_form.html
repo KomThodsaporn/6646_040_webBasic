@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: red;">input</span> element can be displayed in many ways. depending on the <span style="color: red;">type</span> attribute</p>
+
+    <fieldset>
+        <legend>Text Field</legend>
+        <form action=""  method="post">
+            <label for="ff">First Name</label><br>
+            <input type="text" name="first name" id="ff" placeholder="ป้อนชื่อ" required><br><br>
+            <label for="ln">Last Name</label><br>
+            <input type="text" name="last name" id="ln" placeholder="ป้อนนามสกุล"><br><br>
+            <label for="em">Email</label><br>
+            <input type="email" name="email" id="em" placeholder="ป้อนเมล"><br><br>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" min="0" max="100" placeholder="ป้อนอายุ" ><br><br>
+            <label for="pw">Password</label><br>
+            <input type="password" name="password" id="pw" placeholder="ป้อนรหัสผ่าน" required><br><br>
+            <label for="age">Age Readonly</label><br>
+            <input type="number" name="ageR" id="ageR" min="0" max="10" value="8" readonly><br><br>
+            <label for="d">Date</label><br>
+            <input type="date" name="date" id="d"><br><br>
+            <label for="www">Website</label><br>
+            <input type="url" name="Website" id="www" placeholder="https://www.example.com"><br><br>
+            <label for="address">ที่อยู่</label><br>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea><br><br>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color"><br><br>
+            <label for="photo">เลือกรูป</label>
+            <input type="file" name="photo" id="photo"><br><br>
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Redio Button</legend>
+        <label>Gender :</label>
+        <input type="radio" id="male" value="M">
+        <label for="male" >ชาย</label>
+        <input type="radio" id="female" value="F">
+        <label for="female" >หญิง</label><br><br>
+        <input type="submit"value="ยืนยัน">
+    </fieldset>
+    <fieldset>
+        <legend>Checkbox</legend>
+        <form action="">
+            <label for="">วิชาที่ชอบ</label>
+            <input type="checkbox" name="subject1" id="math" value="math">
+            <label for="math">วิชาคณิตศาสตร์</label>
+            <input type="checkbox" name="subject2" id="com" value="com">
+            <label for="com">วิชาคอมพิวเตอร์</label>
+            <input type="checkbox" name="subject3" id="pm" value="pm">
+            <label for="pm">วิชาพละ</label><br><br>
+            <button type="submit">ตกลง</button>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>DropDown List [Select..Option..]</legend>
+        <form action="">
+            <label for="province">จังหวัด</label>
+            <select name="province" id="province">
+                <option value="bbk">กรุงเทพมหานคร</option>
+                <option value="nakhon pathom">นครปฐม</option>
+                <option value="khonkean">ขอนแก่น</option>
+                <option value="chiangmai">เชียงใหม่</option>
+            </select>
+        </form>
+    </fieldset>
+</body>
+</html>
